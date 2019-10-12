@@ -5,6 +5,8 @@ import HomeContainer from '@/components/tabbar/HomeContainer'
 import SearchContainer from '@/components/tabbar/SearchContainer'
 import MemberContainer from '@/components/tabbar/MemberContainer'
 import ShopcartContainer from '@/components/tabbar/ShopcartContainer'
+import NewsList from '@/components/news/NewsList'
+import NewsInfo from '@/components/news/NewsInfo'
 
 Vue.use(Router)
 
@@ -34,6 +36,16 @@ export default new Router({
       path: '/shopcart',
       // name: 'HelloWorld',
       component: ShopcartContainer
+    },
+    {
+      path: '/home/newslist',
+      // name: 'HelloWorld',
+      component: NewsList
+    },
+    {
+      path: '/home/newslist/:id',
+      // name: 'HelloWorld',
+      component: NewsInfo
     }
   ],
   linkActiveClass:'mui-active'

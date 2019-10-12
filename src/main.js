@@ -7,21 +7,27 @@ import VueResource from 'vue-resource'
 
 import { Header } from 'mint-ui';
 import 'mint-ui/lib/style.css'
+import { Swipe, SwipeItem,Button } from 'mint-ui';
+
+Vue.component(Swipe.name, Swipe);
+Vue.component(SwipeItem.name, SwipeItem);
+Vue.component(Header.name, Header);
+Vue.component(Button.name, Button);
 
 import '../lib/css/mui.min.css'
 import '../lib/css/icons-extra.css'
 
-import { Swipe, SwipeItem } from 'mint-ui';
 
-Vue.component(Swipe.name, Swipe);
-Vue.component(SwipeItem.name, SwipeItem);
-
-
-Vue.component(Header.name, Header);
 
 Vue.config.productionTip = false
 
 Vue.use(VueResource)
+
+import moment from 'moment'
+
+Vue.filter('dataformat',function(datastr, pattern = "YYYY-MM-DD HH:mm:ss"){
+  return moment(datastr).format(pattern)
+})
 
 /* eslint-disable no-new */
 new Vue({
