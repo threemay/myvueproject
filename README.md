@@ -1,9 +1,16 @@
 # myproject
 
 > A Vue.js project
+ 
+ use mint-ui for header
+
+ use mui for tabbar
+
+
+
 
 ## Build Setup
-asd
+
 ``` bash
 # install dependencies
 npm install
