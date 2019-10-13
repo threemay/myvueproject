@@ -8,7 +8,9 @@ import VueResource from 'vue-resource'
 import { Header } from 'mint-ui';
 import 'mint-ui/lib/style.css'
 import { Swipe, SwipeItem,Button } from 'mint-ui';
+import { Lazyload } from 'mint-ui';
 
+Vue.use(Lazyload);
 Vue.component(Swipe.name, Swipe);
 Vue.component(SwipeItem.name, SwipeItem);
 Vue.component(Header.name, Header);

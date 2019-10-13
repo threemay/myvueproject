@@ -7,6 +7,7 @@ import MemberContainer from '@/components/tabbar/MemberContainer'
 import ShopcartContainer from '@/components/tabbar/ShopcartContainer'
 import NewsList from '@/components/news/NewsList'
 import NewsInfo from '@/components/news/NewsInfo'
+import PhotoList from '@/components/photo/PhotoList'
 
 Vue.use(Router)
 
@@ -46,7 +47,12 @@ export default new Router({
       path: '/home/newslist/:id',
       // name: 'HelloWorld',
       component: NewsInfo
-    }
+    },
+    {
+      path: '/home/photolist',
+      // name: 'HelloWorld',
+      component: PhotoList
+    },
   ],
   linkActiveClass:'mui-active'
 })

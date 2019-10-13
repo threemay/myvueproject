@@ -10,10 +10,10 @@
     <ul class="mui-table-view mui-grid-view mui-grid-9">
         <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><router-link to="/home/newslist">
                 <img src="../../images/menu1.png" alt="" class="img-grid">
-                <div class="mui-media-body">Home</div></router-link></li>
-        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><router-link to="/home/">
+                <div class="mui-media-body">news</div></router-link></li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><router-link to="/home/photolist">
                 <img src="../../images/menu2.png" alt="" class="img-grid">
-                <div class="mui-media-body">Email</div></router-link></li>
+                <div class="mui-media-body">photo</div></router-link></li>
         <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4"><a href="#">
                 <img src="../../images/menu3.png" alt="" class="img-grid">
                 <div class="mui-media-body">Chat</div></a></li>

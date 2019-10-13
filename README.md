@@ -6,6 +6,11 @@
 
  use mui for tabbar
 
+remove strict mode
+
+ npm install babel-plugin-transform-remove-strict-mode -D
+ "plugins": ["transform-remove-strict-mode"]
+
 
 
 
